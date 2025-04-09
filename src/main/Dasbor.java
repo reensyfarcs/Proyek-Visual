@@ -34,6 +34,7 @@ public class Dasbor extends javax.swing.JFrame {
         pnKaryawan.setBackground(DefaultColor);
         pnLaporan.setBackground(DefaultColor);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -102,11 +103,18 @@ public class Dasbor extends javax.swing.JFrame {
 
         lbl_icnHome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/home.png"))); // NOI18N
+        lbl_icnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_icnHomeMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lbl_icnHomeMousePressed(evt);
+            }
+        });
         pnHome.add(lbl_icnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 40, 30));
 
         lbl_Home.setBackground(new java.awt.Color(64, 115, 158));
         lbl_Home.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        lbl_Home.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Home.setText("Home");
         lbl_Home.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -116,7 +124,7 @@ public class Dasbor extends javax.swing.JFrame {
                 lbl_HomeMousePressed(evt);
             }
         });
-        pnHome.add(lbl_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 190, 20));
+        pnHome.add(lbl_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 130, 20));
 
         pnSide.add(pnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 210, 40));
 
@@ -125,11 +133,18 @@ public class Dasbor extends javax.swing.JFrame {
 
         lbl_icnProduksi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icnProduksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/calculator-money.png"))); // NOI18N
+        lbl_icnProduksi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_icnProduksiMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lbl_icnProduksiMousePressed(evt);
+            }
+        });
         pnProduksi.add(lbl_icnProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 40, 30));
 
         lbl_Produksi.setBackground(new java.awt.Color(64, 115, 158));
         lbl_Produksi.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        lbl_Produksi.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Produksi.setText("Produksi");
         lbl_Produksi.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -139,7 +154,7 @@ public class Dasbor extends javax.swing.JFrame {
                 lbl_ProduksiMousePressed(evt);
             }
         });
-        pnProduksi.add(lbl_Produksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 20));
+        pnProduksi.add(lbl_Produksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 130, 20));
 
         pnSide.add(pnProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 210, 40));
 
@@ -148,11 +163,18 @@ public class Dasbor extends javax.swing.JFrame {
 
         lbl_icnBarang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icnBarang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/van-fast.png"))); // NOI18N
+        lbl_icnBarang.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_icnBarangMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lbl_icnBarangMousePressed(evt);
+            }
+        });
         pnBarang.add(lbl_icnBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 40, 30));
 
         lbl_Barang.setBackground(new java.awt.Color(64, 115, 158));
         lbl_Barang.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        lbl_Barang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Barang.setText("Barang");
         lbl_Barang.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -162,7 +184,7 @@ public class Dasbor extends javax.swing.JFrame {
                 lbl_BarangMousePressed(evt);
             }
         });
-        pnBarang.add(lbl_Barang, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 20));
+        pnBarang.add(lbl_Barang, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 130, 20));
 
         pnSide.add(pnBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 210, 40));
 
@@ -171,11 +193,18 @@ public class Dasbor extends javax.swing.JFrame {
 
         lbl_icnKaryawan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icnKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/users-alt.png"))); // NOI18N
+        lbl_icnKaryawan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_icnKaryawanMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lbl_icnKaryawanMousePressed(evt);
+            }
+        });
         pnKaryawan.add(lbl_icnKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 40, 30));
 
         lbl_Karyawan.setBackground(new java.awt.Color(64, 115, 158));
         lbl_Karyawan.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        lbl_Karyawan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Karyawan.setText("Karyawan");
         lbl_Karyawan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -185,7 +214,7 @@ public class Dasbor extends javax.swing.JFrame {
                 lbl_KaryawanMousePressed(evt);
             }
         });
-        pnKaryawan.add(lbl_Karyawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 20));
+        pnKaryawan.add(lbl_Karyawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 130, 20));
 
         pnSide.add(pnKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 210, 40));
 
@@ -194,11 +223,18 @@ public class Dasbor extends javax.swing.JFrame {
 
         lbl_icnLaporan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_icnLaporan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/light-emergency-on.png"))); // NOI18N
+        lbl_icnLaporan.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lbl_icnLaporanMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                lbl_icnLaporanMousePressed(evt);
+            }
+        });
         pnLaporan.add(lbl_icnLaporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 5, 40, 30));
 
         lbl_Laporan.setBackground(new java.awt.Color(64, 115, 158));
         lbl_Laporan.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
-        lbl_Laporan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_Laporan.setText("Laporan");
         lbl_Laporan.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -208,7 +244,7 @@ public class Dasbor extends javax.swing.JFrame {
                 lbl_LaporanMousePressed(evt);
             }
         });
-        pnLaporan.add(lbl_Laporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 180, 20));
+        pnLaporan.add(lbl_Laporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 130, 20));
 
         pnSide.add(pnLaporan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 210, 40));
 
@@ -250,7 +286,7 @@ public class Dasbor extends javax.swing.JFrame {
         MenuName.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         MenuName.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/user.png"))); // NOI18N
         MenuName.setText(" Hi, Mrs. !");
-        pnUp.add(MenuName, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 4, 210, 70));
+        pnUp.add(MenuName, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 4, 1000, 70));
 
         lbl_exit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbl_exit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img_icon/rectangle-xmark.png"))); // NOI18N
@@ -288,7 +324,7 @@ public class Dasbor extends javax.swing.JFrame {
                         public void run(){
                             try{
                                 for (int i = 210; i >=0; i--){
-                                    Thread.sleep(i);
+                                    Thread.sleep(2);
                                     pnSide.setSize(i,625);
                                 }
                             }catch (Exception e){
@@ -308,8 +344,8 @@ public class Dasbor extends javax.swing.JFrame {
                @Override
                public void run(){
                    try{
-                       for (int i = 0; i <= x; i++){
-                           Thread.sleep(i);
+                       for (int i = 0; i <= 210; i++){
+                           Thread.sleep(2);
                            pnSide.setSize(i, 625);
                        }
                    }catch (Exception e){
@@ -424,6 +460,106 @@ public class Dasbor extends javax.swing.JFrame {
         
         MenuName.setText("It's Barang Form");
     }//GEN-LAST:event_lbl_BarangMousePressed
+
+    private void lbl_icnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnHomeMouseClicked
+        // TODO add your handling code here:
+        Home  home = new Home();
+        pnMain.removeAll();
+        pnMain.setSize(940, 625);
+        home.setSize(pnMain.getSize());
+        pnMain.add(home).setVisible(true);
+    }//GEN-LAST:event_lbl_icnHomeMouseClicked
+
+    private void lbl_icnProduksiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnProduksiMouseClicked
+        // TODO add your handling code here:
+        Produksi  produksi = new Produksi();
+        pnMain.removeAll();
+        pnMain.setSize(940, 625);
+        produksi.setSize(pnMain.getSize());
+        pnMain.add(produksi).setVisible(true);
+    }//GEN-LAST:event_lbl_icnProduksiMouseClicked
+
+    private void lbl_icnBarangMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnBarangMouseClicked
+        // TODO add your handling code here:
+        Barang barang = new Barang();
+        pnMain.removeAll();
+        pnMain.setSize(940, 625);
+        barang.setSize(pnMain.getSize());
+        pnMain.add(barang).setVisible(true);
+    }//GEN-LAST:event_lbl_icnBarangMouseClicked
+
+    private void lbl_icnKaryawanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnKaryawanMouseClicked
+        // TODO add your handling code here:
+        Karyawan karyawan = new Karyawan();
+        pnMain.removeAll();
+        pnMain.setSize(940, 625);
+        karyawan.setSize(pnMain.getSize());
+        pnMain.add(karyawan).setVisible(true);
+    }//GEN-LAST:event_lbl_icnKaryawanMouseClicked
+
+    private void lbl_icnLaporanMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnLaporanMouseClicked
+        // TODO add your handling code here:
+        Laporan  laporan = new Laporan();
+        pnMain.removeAll();
+        pnMain.setSize(940, 625);
+        laporan.setSize(pnMain.getSize());
+        pnMain.add(laporan).setVisible(true);
+    }//GEN-LAST:event_lbl_icnLaporanMouseClicked
+
+    private void lbl_icnHomeMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnHomeMousePressed
+        // TODO add your handling code here:
+        pnHome.setBackground(ClickedColor);
+        pnProduksi.setBackground(DefaultColor);
+        pnBarang.setBackground(DefaultColor);
+        pnKaryawan.setBackground(DefaultColor);
+        pnLaporan.setBackground(DefaultColor);
+        
+        MenuName.setText("Hi, There !");
+    }//GEN-LAST:event_lbl_icnHomeMousePressed
+
+    private void lbl_icnProduksiMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnProduksiMousePressed
+        // TODO add your handling code here:
+        pnHome.setBackground(DefaultColor);
+        pnProduksi.setBackground(ClickedColor);
+        pnBarang.setBackground(DefaultColor);
+        pnKaryawan.setBackground(DefaultColor);
+        pnLaporan.setBackground(DefaultColor);
+        
+        MenuName.setText("I'ts Produksi Form");
+    }//GEN-LAST:event_lbl_icnProduksiMousePressed
+
+    private void lbl_icnBarangMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnBarangMousePressed
+        // TODO add your handling code here:
+        pnHome.setBackground(DefaultColor);
+        pnProduksi.setBackground(DefaultColor);
+        pnBarang.setBackground(ClickedColor);
+        pnKaryawan.setBackground(DefaultColor);
+        pnLaporan.setBackground(DefaultColor);
+        
+        MenuName.setText("It's Barang Form");
+    }//GEN-LAST:event_lbl_icnBarangMousePressed
+
+    private void lbl_icnKaryawanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnKaryawanMousePressed
+        // TODO add your handling code here:
+        pnHome.setBackground(DefaultColor);
+        pnProduksi.setBackground(DefaultColor);
+        pnBarang.setBackground(DefaultColor);
+        pnKaryawan.setBackground(ClickedColor);
+        pnLaporan.setBackground(DefaultColor);
+        
+        MenuName.setText("It's Karyawan Form");
+    }//GEN-LAST:event_lbl_icnKaryawanMousePressed
+
+    private void lbl_icnLaporanMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbl_icnLaporanMousePressed
+        // TODO add your handling code here:
+        pnHome.setBackground(DefaultColor);
+        pnProduksi.setBackground(DefaultColor);
+        pnBarang.setBackground(DefaultColor);
+        pnKaryawan.setBackground(DefaultColor);
+        pnLaporan.setBackground(ClickedColor);
+        
+        MenuName.setText("It's Laporan Form");
+    }//GEN-LAST:event_lbl_icnLaporanMousePressed
 
     /**
      * @param args the command line arguments
