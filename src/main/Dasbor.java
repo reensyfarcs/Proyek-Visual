@@ -215,6 +215,7 @@ public class Dasbor extends javax.swing.JFrame {
         jPanel1.add(pnSide, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 73, -1, 552));
 
         pnMain.setBackground(new java.awt.Color(255, 255, 255));
+        pnMain.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout pnMainLayout = new javax.swing.GroupLayout(pnMain);
         pnMain.setLayout(pnMainLayout);

@@ -1,0 +1,28 @@
+## Palette :
+	# Utama : [72,126,176] Seabrook
+	# Sekunder : [64,115,158] Naval
+	# Tambahan : 
+			> [232, 65, 24,1.0] Naturcian Flower
+			> [194, 54, 22,1.0] Harley Davidson Orange
+			> [251, 197, 49,1.0] Rise n Shine
+			> [225, 177, 44,1.0] Nanohanacha Gold
+			> [76, 209, 55,1.0] Download Progress
+			> [68, 189, 50,1.0] Skirret Green
+			> [39, 60, 117,1.0] Mazarine Blue
+			> [25, 42, 86,1.0] Pico Void
+			> [53, 59, 72,1.0] Blue Nights
+			> [127, 143, 166,1.0] Blueberry Soda
+## Font :
+	# Utama : Tahoma Bold
+	# Sekunder : Arial Bold
+## Ukuran Font : 
+	# Utama : 18
+	# Sekunder : 12-14
+	# Tambahan : 12-16
+## Ukuran Panel :
+	# Login : 650, 380
+	# Dasbor :
+		> Panel Utama : [1000, 552]
+		> Panel Atas : [984, 203] | [146, 64]	
+		> Panel Samping : [210, 300]
+	# Form Tambahan GUI Internal : [800, 625]
